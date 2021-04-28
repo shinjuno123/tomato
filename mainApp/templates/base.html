@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "mainApp/css/reset.css" %}'>
+    <link rel="stylesheet" href='{% static "mainApp/css/base.css" %}'>
+    {% block csslist %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li class="logo"><a href="{% url 'mainApp:mainApp' %}"><div>로고</div></a></li>
+                <ol class="menu-li">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ol>
+                <ol class="login-bts">
+                    <li class="login"><a href="{% url 'accounts:login' %}">login</a></li>
+                    <li class="sign-in"><a href="{% url 'accounts:signIn' %}">sign in</a></li>
+                </ol>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+          
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
