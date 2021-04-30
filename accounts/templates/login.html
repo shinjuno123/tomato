@@ -10,11 +10,7 @@
 <article>
     <div class="login-box">
         <form action="" method="POST" class="loginform">{% csrf_token %}
-            <div class="">
-                {{form.username}}
-                {{form.password}}
-            </div>
-
+            {{login_form}}
             <div class="submit-login"><input type="submit" value="로그인"></div>
         </form>
     </div>

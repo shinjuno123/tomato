@@ -8,15 +8,10 @@
 
 {% block content %}
 <article>
-    <div class="register-box">
+    <div class="register-box">{% csrf_token %}
         <form action="" method="POST" class="registerform">{% csrf_token %}
-            {% for field in form %}
-            <div>
-                {{field.label_tag}} {{field}}
-            </div>
-            {% endfor %}
-
-            <div class="submit-register"><input type="submit" value="로그인"></div>
+            {{signup_form}}
+            <div class="submit-register"><input type="submit" value="회원가입"></div>
         </form>
     </div>
 </article>

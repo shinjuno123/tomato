@@ -1,18 +1,40 @@
-from django.shortcuts import render
+from django.contrib import auth
+from django.shortcuts import redirect, render
+from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
+from django.contrib.auth import login as auth_login
+from django.contrib.auth import logout as auth_logout
 from .forms import *
-
 # Create your views here.
-def signIn(request):
+def signUp(request):
     if request.method == 'POST':
-        user_form = RegisterForm(request.POST)
-        if user_form.is_valid():
-            new_user = user_form.save(commit=False)
-            new_user.set_password(user_form.cleaned_data['password'])
-            new_user.save()
-            return render(request,'signIn.html',{'new_user':new_user})
+        signup_form = UserCreationForm(request.POST)
+
+        if signup_form.is_valid():
+            signup_form.save()
+        return redirect('mainApp:mainApp')
+
     else:
-        user_form = RegisterForm()
+        signup_form = UserCreationForm()
     
-    return render(request,'signIn.html',{'form':user_form})
+    return render(request,'signUp.html',{'signup_form':signup_form})
 
 
+
+def login(request):
+    if request.method == 'POST':
+        login_form = AuthenticationForm(request,request.POST)
+        if login_form.is_valid():
+            auth_login(request,login_form.get_user())
+            print("로그인됨")
+        return redirect('mainApp:mainApp')
+
+    else:
+        login_form = AuthenticationForm()
+
+    return render(request,'login.html',{'login_form':login_form})
+
+
+
+def logout(request):
+    auth_logout(request)
+    return redirect('mainApp:mainApp')
