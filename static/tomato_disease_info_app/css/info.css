@@ -1,0 +1,125 @@
+.main_field{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 50%;
+    top: 140px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 50px;
+    transform: translate(-50%,0%);
+    justify-content: center;
+    z-index: 1;
+}
+.main_field .disease-main-content{
+    text-align: absolute;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.main_field .disease-main-content.disease-title{
+    width: 60%;
+    height: 700px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.main_field.disease-main-content ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 50px;
+}
+
+.photoserach li{
+    display: inline-block;
+    margin: 3px 10px 20px 10px;
+}
+
+.photoserach img{
+    width:200px;
+    width:200px;
+}
+
+.main_field h4{
+    font-size: 20px;
+    color: rgba(0,100,200)
+}
+
+.photoSch{
+--swiper-theme-color: #007aff;
+--swiper-navigation-size: 44px;
+font-family: 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', Malgun Gothic, '맑은 고딕', 'Apple Gothic', Helvetica Neue, '돋움', Dotum, sans-serif;
+font-size: 15px;
+font-weight: 400;
+color: #333;
+-webkit-text-size-adjust: none;
+margin: 0 0 5px;
+position: relative;
+background: url(./images/bg_photo1.gif) repeat;
+border: 1px solid #c9cdd0;
+padding: 24px 20px;
+vertical-align: top;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.gridPhoto{
+--swiper-theme-color: #007aff;
+--swiper-navigation-size: 44px;
+-webkit-text-size-adjust: none;
+display: table;
+vertical-align: top;
+margin: 0;
+padding: 0;
+font-family: 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', Malgun Gothic, '맑은 고딕', 'Apple Gothic', Helvetica Neue, '돋움', Dotum, sans-serif;
+font-weight: 400;
+color: #333;
+border-spacing: 0;
+empty-cells: show;
+border-collapse: collapse;
+border: 1px solid #cccccc!important;
+font-size: 14px;
+width: 100%;
+background-color: #fff;
+}
+
+
+.titlePhoto{
+--swiper-theme-color: #007aff;
+--swiper-navigation-size: 44px;
+font-family: 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', Malgun Gothic, '맑은 고딕', 'Apple Gothic', Helvetica Neue, '돋움', Dotum, sans-serif;
+font-weight: 400;
+border-spacing: 0;
+empty-cells: show;
+border-collapse: collapse;
+font-size: 14px;
+white-space: normal;
+color: #585858;
+-webkit-text-size-adjust: none;
+margin: 0;
+padding: 0;
+padding-left: 50px;
+background: url(../images/common/bg_photo2.gif) no-repeat 34px 50%;}
+
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+h4{
+    padding-left: 22px;
+    margin: 15px 5px 13px 0;
+    font-size: 16px;}

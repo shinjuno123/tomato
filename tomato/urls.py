@@ -20,5 +20,6 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('mainApp.urls')),
-    path('accounts/',include('accounts.urls')),
+    path('',include('tomato_disease_recognition_app.urls')),
+    path('',include('tomato_disease_info_app.urls')),
 ]

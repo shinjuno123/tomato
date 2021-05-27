@@ -14,16 +14,12 @@
     <header>
         <nav>
             <ul class="navigation">
-                <li class="logo"><a href="{% url 'mainApp:mainApp' %}"><div>로고</div></a></li>
+                <li class="logo"><a href="{% url 'mainApp:mainApp' %}"><img src="{% static 'images/logo_no_background.png' %}" alt=""></a></li>
                 <ol class="menu-li">
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu2</a></li>
-                    <li><a href="#">menu3</a></li>
-                    <li><a href="#">menu4</a></li>
-                </ol>
-                <ol class="login-bts">
-                    <li class="login"><a href="{% url 'accounts:login' %}">login</a></li>
-                    <li class="sign-in"><a href="{% url 'accounts:signUp' %}">sign in</a></li>
+                    <li><a href="{% url 'tomato_disease_recognition_app:tomato_disease_recognition' %}">토마토 질병인식</a></li>
+                    <li><a href="#">토마토 가격예측</a></li>
+                    <li><a href="{% url 'tomato_disease_info_app:tomato_disease_info' %}">토마토 질병도감</a></li>
+                    <li><a href="#">사이트 설명</a></li>
                 </ol>
             </ul>
         </nav>
