@@ -5,10 +5,12 @@ body, input, textarea, select, button, table, h1, h2, h3, h4, h5 {
     color: #333;
 }
 
+
+
 .main_field{
     position: absolute;
-    width: 80%;
-    height: 980px;
+    width: 100%;
+    height: 2000px;
     left: 50%;
     top: 140px;
     background-color: rgba(255, 255, 255, 1);
@@ -23,12 +25,11 @@ body, input, textarea, select, button, table, h1, h2, h3, h4, h5 {
     padding: 20px;
     margin-bottom: 10px;
 }
-.main_field .disease-main-content.disease_title{
-}
 
-.main_field li{
+.content_field{
     padding-left: 22px;
 }
+
 
 h2 {
     font-size: 50px;
@@ -44,9 +45,7 @@ h2 {
     margin: 20px;
     
 }
-.main_field.disease-main-content.h5{
-    
-}
+
 
 .photoserach li{
     display: inline-block;
@@ -66,7 +65,7 @@ h2 {
     padding-left: 22px;
 }
 .main_field h5{
-    padding-left: 30px;
+    padding-left: 20px;
     margin: 15px 5px 5px 0;
     font-size: 13px;
     background: url(./images/bull_h5.gif)  no-repeat 9px 50%;
@@ -80,13 +79,31 @@ font-size: 15px;
 font-weight: 400;
 color: #333;
 -webkit-text-size-adjust: none;
-margin: 0 0 5px;
+margin: 0 0 5px auto;
 position: relative;
 background: url(./images/bg_photo1.gif) repeat;
 border: 1px solid #c9cdd0;
 padding: 24px 20px;
 vertical-align: top;
 }
+
+@media  (max-width:400px)
+{
+    tr{
+        display: -webkit-flex;
+        display: flex;
+        vertical-align: inherit;
+        border-color: inherit;
+        float: left;
+        margin: 20px;
+    }
+    td{
+        vertical-align: inherit;
+        margin:20px;
+    }
+}
+
+/* KU */
 
 tr {
     display: table-row;
@@ -143,8 +160,16 @@ background: url(./images/bg_photo2.gif) no-repeat 34px 50%;}
     line-height: 24px;  
 }
 
+
 tbody{
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
+}
+
+.sizing img{
+    object-fit: scale-down;
+
+    width:200px;
+    height:200px;
 }
