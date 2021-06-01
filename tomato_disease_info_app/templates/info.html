@@ -104,7 +104,7 @@
 
 			<li>
 				<br><br>
-				<h4></h4>
+				<h4>병 사진정보</h4>
 
 				<div class="imgpanel" >
 					
@@ -115,49 +115,15 @@
 					<img src="{% static 'images/disease_info/cat1/cat1_5.jpg' %}" alt="">
 
 					
-					
-					
-					
-					
-					
-					
-					
-					<!-- <ul>
-						<div class="sizing">
-						<li>
-							<img src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}" alt="">
-						</li>
-						<li>
-							<img src="{% static 'images/disease_info/cat1/cat1_2.jpg' %}" alt="">
-						</li>
-						<li>
-							<img src="{% static 'images/disease_info/cat1/cat1_3.jpg' %}" alt="">
-						</li>
-						<li>
-							<img src="{% static 'images/disease_info/cat1/cat1_4.jpg' %}" alt="">
-						</li>
-						<li>
-							<img src="{% static 'images/disease_info/cat1/cat1_5.jpg' %}" alt="">
-						</li> -->
-						<!-- <tr>
-							<td><img src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}" alt=""></td>
-						</tr>
-						<tr>
-							<td><img src="{% static 'images/disease_info/cat1/cat1_2.jpg' %}" alt=""></td>
-						</tr>
-						<tr>
-							<td><img src="{% static 'images/disease_info/cat1/cat1_3.jpg' %}" alt=""></td>
-						</tr>
-						<tr>
-							<td><img src="{% static 'images/disease_info/cat1/cat1_4.jpg' %}" alt=""></td>
-						</tr>
-						<tr>
-							<td><img src="{% static 'images/disease_info/cat1/cat1_5.jpg' %}" alt=""></td>
-						</tr> -->
 					</div>
 					</ul>
 				</div>
+				
 
+			</li>
+
+			<li>
+				출처 : <a href=""></a>
 			</li>
 
 		</ul>
@@ -165,6 +131,10 @@
 </div>
 </div>
 </div>
-
-
 {% endblock %}
+<script type="text/javascript">
+	var img = document.getElementByTagName('img');
+		for(var x=0; x<img.length; x++){
+			img.item(x).onclick=function(){window.open(this.src)}
+		}
+</script>
