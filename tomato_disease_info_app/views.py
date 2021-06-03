@@ -29,6 +29,6 @@ def info_page7(request):
     return render(request, 'info7.html')
 
 def info_page8(request):
-    return render(request, 'info7.html')
+    return render(request, 'info8.html')
     
     
