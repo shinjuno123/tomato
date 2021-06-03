@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토-사이트 설명{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<!-- <li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+										<td rowspan="5"><img width="200" height="200"
+												src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>점무늬병</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td>斑點病</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td>Gray leaf spot</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li> -->
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 토마토질병인식</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>기능<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						사용자로 하여금 토마토의 사진을 촬영해 어떤 병해충을 가지고 있는지 판별할 수 있도록 한다.
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 토마토 가격예측</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				
+                <ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>기능<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						사용자로 하여금 토마토의 사진을 촬영해 어떤 병해충을 가지고 있는지 판별할 수 있도록 한다.
+					</li>
+				</ul>
+                
+			</li>
+
+			<li>
+				<br><br>
+				<h4>토마토 질병도감</h4>
+                
+                
+                <ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>기능<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						사용자로 하여금 토마토의 사진을 촬영해 어떤 병해충을 가지고 있는지 판별할 수 있도록 한다.
+					</li>
+				</ul>
+                <!-- 
+				<div class="imgpanel">
+					<div class="container" id="gallery">
+
+
+						<img src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}" alt="점무늬병1">
+						<img src="{% static 'images/disease_info/cat1/cat1_2.jpg' %}" alt="점무늬병2">
+						<img src="{% static 'images/disease_info/cat1/cat1_3.jpg' %}" alt="점무늬병3">
+						<img src="{% static 'images/disease_info/cat1/cat1_4.jpg' %}" alt="점무늬병4">
+						<img src="{% static 'images/disease_info/cat1/cat1_5.jpg' %}" alt="점무늬병5">
+
+					</div>
+				</div> -->
+				<!-- <script type="text/javascript">
+					// Get the modal
+					var modal = document.getElementById('myModal');
+			   
+				   // Get the image and insert it inside the modal - use its "alt" text as a caption
+				   var img = document.getElementsByClassName('myImg');
+				   var modalImg = document.getElementById("modal-image");
+				   var captionText = document.getElementById("caption");
+				   img.onclick = function(){
+					   modal.style.display = "block";
+					   modalImg.src = this.src;
+					   captionText.innerHTML = this.alt;
+				   }
+			   
+				   // Get the <span> element that closes the modal
+				   var span = document.getElementsByClassName("close")[0];
+			   
+				   // When the user clicks on <span> (x), close the modal
+				   span.onclick = function() { 
+				   modal.style.display = "none";
+				   }
+			   </script> -->
+               </li>
+		</ul>
+	</div>
+
+
+
+	<li>
+		출처 : <a href=""></a>
+	</li>
+
+	</ul>
+</div>
+</div>
+
+{% endblock %}

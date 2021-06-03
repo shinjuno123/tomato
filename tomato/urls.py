@@ -22,4 +22,5 @@ urlpatterns = [
     path('',include('mainApp.urls')),
     path('',include('tomato_disease_recognition_app.urls')),
     path('',include('tomato_disease_info_app.urls')),
+    path('',include('tomato_site_info_app.urls')),
 ]

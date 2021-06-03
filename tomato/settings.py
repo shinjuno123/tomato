@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'mainApp',
     'tomato_disease_recognition_app',
     'tomato_disease_info_app',
+    'tomato_site_info_app'
 ]
 
 MIDDLEWARE = [
